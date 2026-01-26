@@ -1,71 +1,155 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Shot Multivitamínico</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shot Multivitamínico | MultiJugo</title>
+
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #0b132b;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    /* HERO */
+    .hero {
+      background-image: url("images/hero.jpg");
+      background-size: cover;
+      background-position: center;
+      padding: 100px 20px;
       text-align: center;
     }
-    header {
-      padding: 40px 20px;
-    }
-    h1 {
-      font-size: 2.5rem;
+
+    .hero h1 {
+      font-size: 42px;
       margin-bottom: 10px;
     }
-    p {
-      font-size: 1.1rem;
+
+    .hero p {
+      font-size: 18px;
       max-width: 600px;
-      margin: 0 auto 20px;
+      margin: 0 auto 30px;
     }
-    .cta {
-      background: #22c55e;
-      color: #0f172a;
+
+    .btn {
+      background-color: #22c55e;
+      color: #ffffff;
       padding: 15px 30px;
       border-radius: 8px;
-      text-decoration: none;
       font-weight: bold;
       display: inline-block;
-      margin-top: 20px;
     }
-    footer {
-      margin-top: 40px;
+
+    /* SECTIONS */
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    section p {
+      max-width: 700px;
+      margin: 0 auto 30px;
+      color: #d1d5db;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 12px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* CTA */
+    .cta {
+      background-image: url("images/cta.jpg");
+      background-size: cover;
+      background-position: center;
+      padding: 80px 20px;
+    }
+
+    .footer {
       padding: 20px;
-      font-size: 0.9rem;
-      opacity: 0.8;
+      font-size: 14px;
+      color: #9ca3af;
     }
   </style>
 </head>
+
 <body>
 
-<header>
-  <h1>Shot Multivitamínico</h1>
-  
-  .hero {
-  background-image: url("/hero.jpg");
-  background-size: cover;
-  background-position: center;
-  }
-  
-  <p>
-    1 shot al día. Siente el cambio.    
-    Refuerza tu inmunidad, reduce el estrés, desinflama y recupera tu energía.
-  </p>
+  <!-- HERO -->
+  <div class="hero">
+    <h1>Shot Multivitamínico</h1>
+    <p>1 shot al día. Siente el cambio. Refuerza tu inmunidad, reduce el estrés, desinflama y recupera tu energía.</p>
+    <a class="btn" href="https://wa.me/569XXXXXXXX" target="_blank">
+      Comprar ahora por WhatsApp
+    </a>
+  </div>
 
-  <a class="cta" href="https://wa.me/56945982970">
-    Comprar ahora por WhatsApp
-  </a>
-</header>
+  <!-- QUE ES -->
+  <section>
+    <h2>¿Qué es MultiJugo?</h2>
+    <p>
+      Shots funcionales congelados elaborados con frutas, verduras y superalimentos.
+      Diseñados para apoyar tu salud diaria de forma práctica y natural.
+    </p>
+    <img src="images/pack-10.jpg" alt="Pack de 10 Shots Multivitamínicos">
+  </section>
 
-<footer>
-  © MultiJugo · Shots multifuncionales congelados
-</footer>
+  <!-- BENEFICIOS -->
+  <section>
+    <h2>Beneficios principales</h2>
+    <img src="images/beneficios.jpg" alt="Beneficios del Shot Multivitamínico">
+  </section>
+
+  <!-- SHOTS -->
+  <section>
+    <h2>¿Qué incluye el pack?</h2>
+    <div class="grid">
+      <img src="images/shot-inmunidad.jpg" alt="Shot Inmunidad">
+      <img src="images/shot-detox.jpg" alt="Shot Detox">
+      <img src="images/shot-relajante.jpg" alt="Shot Relajante">
+      <img src="images/shot-energia.jpg" alt="Shot Energía">
+    </div>
+  </section>
+
+  <!-- COMO USAR -->
+  <section>
+    <h2>¿Cómo se usa?</h2>
+    <p>Abre la bolsa, licúa con agua o tu bebida favorita y toma tu shot.</p>
+    <img src="images/como-usar.jpg" alt="Cómo usar el Shot Multivitamínico">
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta">
+    <h2>Empieza hoy a sentir el cambio</h2>
+    <a class="btn" href="https://wa.me/569XXXXXXXX" target="_blank">
+      Comprar Pack de 10 Shots
+    </a>
+  </section>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    © MultiJugo – Shots funcionales congelados
+  </div>
 
 </body>
 </html>
