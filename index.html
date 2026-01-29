@@ -2,156 +2,201 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shot Multivitamínico | MultiJugo</title>
-
+  <meta name="description" content="Shots funcionales congelados. 1 shot al día para reforzar tu inmunidad, reducir el estrés y recuperar tu energía." />
   <style>
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
+      padding: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background-color: #0b132b;
+    }
+
+    body {
+      background: #0f172a;
       color: #ffffff;
       line-height: 1.6;
     }
 
-    a {
-      text-decoration: none;
+    .container {
+      width: 100%;
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h1, h2, h3 {
+      margin-bottom: 16px;
+    }
+
+    p {
+      color: #e5e7eb;
+      margin-bottom: 16px;
     }
 
     /* HERO */
     .hero {
-      background-image: url("images/hero.jpg");
-      background-size: cover;
-      background-position: center;
-      padding: 100px 20px;
       text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero img {
+      max-width: 420px;
+      width: 100%;
+      margin: 0 auto 32px;
+      display: block;
     }
 
     .hero h1 {
       font-size: 42px;
-      margin-bottom: 10px;
+      font-weight: bold;
     }
 
     .hero p {
       font-size: 18px;
-      max-width: 600px;
-      margin: 0 auto 30px;
+      max-width: 700px;
+      margin: 20px auto 32px;
     }
 
     .btn {
-      background-color: #22c55e;
-      color: #ffffff;
-      padding: 15px 30px;
-      border-radius: 8px;
-      font-weight: bold;
       display: inline-block;
+      background: #22c55e;
+      color: #0f172a;
+      padding: 16px 28px;
+      border-radius: 8px;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
     }
 
     /* SECTIONS */
     section {
-      padding: 60px 20px;
-      text-align: center;
+      margin-top: 80px;
     }
 
-    section h2 {
-      font-size: 30px;
-      margin-bottom: 20px;
+    .two-columns {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      align-items: center;
     }
 
-    section p {
-      max-width: 700px;
-      margin: 0 auto 30px;
-      color: #d1d5db;
-    }
-
-    img {
-      max-width: 100%;
+    .two-columns img {
+      width: 100%;
       border-radius: 12px;
     }
 
+    /* GRID */
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-      max-width: 900px;
-      margin: 0 auto;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      text-align: center;
     }
 
-    /* CTA */
-    .cta {
-      background-image: url("images/cta.jpg");
-      background-size: cover;
-      background-position: center;
-      padding: 80px 20px;
+    .card {
+      background: #020617;
+      padding: 30px 20px;
+      border-radius: 12px;
     }
 
-    .footer {
-      padding: 20px;
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 16px;
+    }
+
+    /* FOOTER */
+    footer {
+      margin-top: 100px;
+      padding: 40px 20px;
+      text-align: center;
       font-size: 14px;
       color: #9ca3af;
     }
   </style>
 </head>
-
 <body>
 
   <!-- HERO -->
-  <div class="hero">
+  <section class="hero">
+    <img src="images/hero.jpg" alt="Shot Multivitamínico MultiJugo" />
     <h1>Shot Multivitamínico</h1>
-    <p>1 shot al día. Siente el cambio.</p>
-    <p>Refuerza tu inmunidad, reduce el estrés, desinflama y recupera tu energía.</p>
-    <p></p>
-    <p></p>
-    <img src="images/principal.jpg" alt="Pack de 10 Shots Multivitamínicos">
-    
-  </div>
-
-  <!-- QUE ES -->
-  <section>
-    <h2>¿Qué es MultiJugo?</h2>
-    <p>
-      Shots funcionales congelados elaborados con frutas, verduras y superalimentos.
-      Diseñados para apoyar tu salud diaria de forma práctica y natural.
-    </p>
-    <img src="images/pack-10.jpg" alt="Pack de 10 Shots Multivitamínicos">
+    <p>1 shot al día. Siente el cambio. Refuerza tu inmunidad, reduce el estrés, desinflama y recupera tu energía.</p>
+    <a class="btn" href="https://wa.me/569XXXXXXXX" target="_blank">Comprar ahora por WhatsApp</a>
   </section>
 
   <!-- BENEFICIOS -->
-  <section>
-    <h2>Beneficios principales</h2>
-    <img src="images/beneficios.jpg" alt="Beneficios del Shot Multivitamínico">
+  <section class="container two-columns">
+    <div>
+      <h2>Beneficios reales en tu día a día</h2>
+      <p>Una combinación potente de frutas, verduras, jengibre, cúrcuma y menta, diseñada para apoyar tu cuerpo de forma natural.</p>
+      <p>Ideal para personas con poco tiempo, estrés, defensas bajas o sensación de hinchazón constante.</p>
+    </div>
+    <img src="images/beneficios.jpg" alt="Beneficios de los shots funcionales" />
   </section>
 
-  <!-- SHOTS -->
-  <section>
-    <h2>¿Qué incluye el pack?</h2>
-    <div class="grid">
-      <img src="images/shot-inmunidad.jpg" alt="Shot Inmunidad">
-      <img src="images/shot-detox.jpg" alt="Shot Detox">
-      <img src="images/shot-relajante.jpg" alt="Shot Relajante">
-      <img src="images/shot-energia.jpg" alt="Shot Energía">
+  <!-- PACK -->
+  <section class="container two-columns">
+    <img src="images/pack10.jpg" alt="Pack de 10 shots funcionales" />
+    <div>
+      <h2>Pack de 10 Shots</h2>
+      <p>Formato congelado de 100 g por shot. Solo descongela, agita y consume.</p>
+      <p>Diseñado para 10 días de nutrición funcional enfocada en inmunidad, detox, energía y relajación.</p>
     </div>
   </section>
 
-  <!-- COMO USAR -->
-  <section>
-    <h2>¿Cómo se usa?</h2>
-    <p>Abre la bolsa, licúa con agua o tu bebida favorita y toma tu shot.</p>
-    <img src="images/como-usar.jpg" alt="Cómo usar el Shot Multivitamínico">
+  <!-- TIPOS DE SHOT -->
+  <section class="container">
+    <h2 style="text-align:center">Tipos de Shot</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="images/tipos-shot.jpg" alt="Shot Inmunidad" />
+        <h3>Inmunidad</h3>
+        <p>Refuerza defensas y ayuda a prevenir resfríos.</p>
+      </div>
+      <div class="card">
+        <h3>Detox</h3>
+        <p>Apoya hígado e intestino, reduce hinchazón.</p>
+      </div>
+      <div class="card">
+        <h3>Energía</h3>
+        <p>Vitalidad natural sin cafeína artificial.</p>
+      </div>
+      <div class="card">
+        <h3>Relajante</h3>
+        <p>Ayuda a bajar el estrés y la tensión diaria.</p>
+      </div>
+    </div>
   </section>
 
-  <!-- CTA FINAL -->
-  <section class="cta">
-    <h2>Empieza hoy a sentir el cambio</h2>
-    <a class="btn" href="https://wa.me/569XXXXXXXX" target="_blank">
-      Comprar tu Pack de 10 Shots
-    </a>
+  <!-- COMO FUNCIONA -->
+  <section class="container two-columns">
+    <div>
+      <h2>¿Cómo funciona?</h2>
+      <p>✔ Mantén congelado<br>
+         ✔ Descongela 10–15 minutos<br>
+         ✔ Consume 1 shot al día</p>
+      <p>Fácil, rápido y pensado para tu rutina diaria.</p>
+    </div>
+    <img src="images/como-funciona.jpg" alt="Cómo consumir los shots" />
   </section>
 
-  <!-- FOOTER -->
-  <div class="footer">
-    © MultiJugo – Shots funcionales congelados
-  </div>
+  <!-- ESTILO DE VIDA -->
+  <section class="container two-columns">
+    <img src="images/estilo-vida.jpg" alt="Estilo de vida saludable" />
+    <div>
+      <h2>Un hábito simple que marca la diferencia</h2>
+      <p>No es solo un jugo. Es un shot funcional diseñado para acompañarte todos los días.</p>
+      <p>Ideal para personas activas, estresadas o que buscan cuidarse sin complicaciones.</p>
+    </div>
+  </section>
+
+  <footer>
+    © MultiJugo · Shots Multivitaminicos Congelados
+  </footer>
 
 </body>
 </html>
+
